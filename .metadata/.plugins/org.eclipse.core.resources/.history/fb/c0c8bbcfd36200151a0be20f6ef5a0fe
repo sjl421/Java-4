@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
+
+
+
+public class ex3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		ArrayList<Integer> num = new ArrayList<Integer>();
+		for(int i = 0;i < 9;i++)
+		{
+			num.add(input.nextInt());
+		}
+		
+		for(int i = 0; i < 9;i++)
+		{
+			num.get(i);
+		}
+		
+		System.out.println(input.nextInt());
+		
+		
+		
+
+	}
+
+}

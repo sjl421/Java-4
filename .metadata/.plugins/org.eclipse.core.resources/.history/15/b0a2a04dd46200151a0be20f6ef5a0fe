@@ -1,0 +1,55 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
+public class ex3 {
+
+	public static class Book
+	{
+		ArrayList<Integer> num;
+		String ISBN;
+		
+		public void setnum()
+		{
+			Scanner input = new Scanner(System.in);
+			for(int i = 0;i < 9;i++)
+			{
+				num.add(input.nextInt());
+			}
+		}
+		
+		public void SetISBN()
+		{
+			int num10 = 0;
+			for(int i = 0;i < 9;i++)
+			{
+				num10 = num.get(i) * (i+1);
+			}
+			num10 = num10 % 11;
+			System.out.println(num10);
+			
+		}
+		
+		
+	}
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Scanner input = new Scanner(System.in);
+		//ArrayList<Integer> num = new ArrayList<Integer>();
+
+
+		Book book = new Book();
+		
+		Book.setnum();
+		book.SetISBN();
+		
+		
+		
+		
+		
+
+	}
+
+}
