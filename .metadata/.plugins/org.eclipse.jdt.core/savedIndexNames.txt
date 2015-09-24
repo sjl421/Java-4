@@ -1,0 +1,8 @@
+INDEX VERSION 1.127+/Users/wangju/Desktop/Java/.metadata/.plugins/org.eclipse.jdt.core
+1685383197.index
+313635516.index
+2344149766.index
+2323286321.index
+4195384766.index
+326359179.index
+2675717907.index

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Convert local variable &apos;ex2.main().triangle&apos; in &apos;ex2.main()&apos; to field&#x0A;- Original project: &apos;习题3.2&apos;&#x0A;- Original element: &apos;ex2.main().triangle&apos;&#x0A;- Field name: &apos;triangle&apos;&#x0A;- Initialize field in method&#x0A;- Declared visibility: &apos;private&apos;&#x0A;- Declare field &apos;static&apos;" description="Convert local variable &apos;triangle&apos; to field" final="false" flags="2" id="org.eclipse.jdt.ui.promote.temp" initialize="1" input="/src&lt;{ex2.java" name="triangle" selection="549 25" stamp="1443116874639" static="true" version="1.0" visibility="2"/>
+</session>
