@@ -1,0 +1,43 @@
+
+public class ex3 {
+
+	static String hNum = "";
+	static String convet(int num)
+	{
+		if(num >= 0 && num <= 9)
+		{
+			return String('0' + num);
+			
+		}
+		else if(num >= 10)
+		{
+			return String('A' + num - 10);
+		}
+		else
+		 return null;
+		
+	}
+	
+	
+	private static String String(int i) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	public String Hexadecimals(int num)
+	{
+		
+		return null;
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println("" + convet(5));
+
+	}
+
+}

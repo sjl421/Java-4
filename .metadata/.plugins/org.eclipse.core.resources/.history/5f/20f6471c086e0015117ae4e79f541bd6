@@ -1,0 +1,40 @@
+
+public class ex3 {
+
+	static String hNum = "";
+	static String convet(int num)
+	{
+		if(num >= 0 && num <= 9)
+		{
+			return String.valueOf((char)('0' + num));
+		
+		}
+		else if(num >= 10)
+		{
+			return String.valueOf((char)('A' + num - 10));
+		}
+		else
+		 return null;
+		
+	}
+	static String Hexadecimals(int num)
+	{
+		
+		if(num <= 0)
+		{
+			Hexadecimals(num = num /16);
+		}
+		
+		return	hNum += convet(num % 16);
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println("" + Hexadecimals(123));
+
+	}
+
+}

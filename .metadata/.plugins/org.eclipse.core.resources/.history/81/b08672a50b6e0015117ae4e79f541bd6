@@ -1,0 +1,27 @@
+
+public class ex4 {
+
+	static boolean isPrimer(int num)
+	{
+	    int j;
+	
+		for(j=1;j<=num;j++) 
+		{
+			if(num%j==0) 
+				break; 	
+		}
+		 if(j==num)
+		   return true;
+		 
+		 return false;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println(isPrimer(51));
+		
+		
+	}
+
+}
