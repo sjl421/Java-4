@@ -1,0 +1,68 @@
+import java.util.*;
+
+
+public class ex1 {
+
+
+	public static int[] eliminateDuplicates(int[] numbers)
+    {
+    	
+		ArrayList<Integer> arrlist = new ArrayList<Integer>();
+    	
+		int min = numbers[0];
+		
+		int index = 0;
+		for(int i = 0;i < 10;i++)
+		{
+			for(int j = i;j<10;j++)
+			{
+				if(min > numbers[j])
+				{
+					min = numbers[j];
+					index = j;
+				}
+
+			}
+			int temp;
+			
+			temp = numbers[i];
+			numbers[i] = min;
+			numbers[index] = temp;
+			if(arrlist.get(arrlist.size()-1) != min)
+			arrlist.add(min);
+			
+		}
+
+		for(int i = 0;i < arrlist.size();i++)
+		{
+			
+			System.out.println(arrlist.indexOf(i));
+		}
+    	
+    	
+		return null;
+
+    }
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		
+		//ArrayList<Integer> arrlist = new ArrayList<Integer>();
+		int[] arr = new int[10];
+		
+		System.out.println("Enter ten numbers:");
+		
+		for(int i = 0;i < 10;i++)
+		{
+			arr[i] = input.nextInt();
+		}
+
+		eliminateDuplicates(arr);
+		
+		
+	}
+
+}
