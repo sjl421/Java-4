@@ -1,0 +1,38 @@
+
+public class ex2 {
+
+	
+	static boolean isPassword(String str)
+	{
+		//1>判断长度
+		if(str.length() < 8)
+		{
+			return false;
+		}
+		
+		int numberCount = 0;
+		for(int i = 0;i < str.length();i++)
+		{
+			char ch = str.charAt(i);
+			if(ch >= '0' && ch <= '9')
+			{
+				numberCount ++;
+			}
+			
+		}
+		if(numberCount <= 2) return false;
+		
+		return true;
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+		System.out.println("agh654afsf");
+		System.out.println(isPassword("agsysy266afksf"));
+	}
+
+}

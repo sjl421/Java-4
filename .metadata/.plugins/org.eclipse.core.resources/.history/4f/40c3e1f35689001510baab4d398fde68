@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+
+public class ex4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter a genome string:");
+		String str = input.next();
+		String start = "ATG";
+		int startIndex;
+		startIndex = str.indexOf(start);
+		
+		System.out.println(startIndex);
+		
+		
+		
+	}
+
+}
