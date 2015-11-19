@@ -120,8 +120,7 @@ public class ex4 {
 				System.out.println("1.check balance");
 				System.out.println("2.withdraw");
 				System.out.println("3.deposit");
-				System.out.println("4.exist");
-				System.out.println("Enter a choice");
+				System.out.println("4.Enter a choice");
 				
 				int choice = input.nextInt();
 				if(choice == 4)
