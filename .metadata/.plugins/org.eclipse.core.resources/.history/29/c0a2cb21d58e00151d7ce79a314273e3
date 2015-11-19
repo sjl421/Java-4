@@ -67,17 +67,19 @@ class Account
 		return this.annualInterestRate * 30;
 	}
 	
-	//取款
+	//存款
 	void withDraw(double money)
 	{
 		
 		this.balance -= money;
+		//System.out.println("您从当前账户取了" +money + "元");
 	}
-	//存款
+	//取款
 	void deposit(double money)
 	{
 		
 		this.balance += money;
+		//System.out.println("您从当前账户存了" +money + "元");
 	}
 	
 }
@@ -88,12 +90,15 @@ class Account
 public class ex4 {
 
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 
 		//初始化账户
 		Account[] accounts = new  Account[11];
 		for(int i = 0;i < accounts.length;i++)
 		{
 			accounts[i] = new Account(i,100);
+			//accounts[i].setId(i);
+			//accounts[i].setBalance(100.0);
 		}
 		
 		Scanner input = new Scanner(System.in);
@@ -145,8 +150,6 @@ public class ex4 {
 		case 3:
 			System.out.println("Enter a amount to deposit");
 			account.deposit(input.nextDouble());
-			break;
-		default:
 			break;
 		}
 		
