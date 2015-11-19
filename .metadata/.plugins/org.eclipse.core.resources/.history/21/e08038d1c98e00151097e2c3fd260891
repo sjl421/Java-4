@@ -1,0 +1,116 @@
+
+class MyInteger
+{
+
+	private int value;
+	
+	public MyInteger(int value) {
+	
+		this.value = value;
+	}
+	
+	int getValue()
+	{
+		return this.value;
+	}
+	//-------------------------
+	boolean isEven()
+	{
+		if(this.value % 2 == 0)
+			return true;
+		else
+			return false;
+		
+	}
+	boolean isOdd()
+	{
+		if(this.isEven())
+			return false;
+		else
+			return true;
+	}
+	
+	boolean isPrime()
+	{
+		  for(int i = 2;i<=this.value / 2; i++){
+		         if(this.value % i == 0)
+		              return false; 
+		    }
+		    return true; 
+	}
+	
+	//-----------------------------
+	static boolean isPrime(int value)
+	{
+		MyInteger in = new MyInteger(value);
+		return in.isPrime();
+	}
+	
+	static boolean isEven(int value)
+	{
+		MyInteger in = new MyInteger(value);
+		return in.isEven();
+	}
+	static boolean isOdd(int value)
+	{
+		MyInteger in = new MyInteger(value);
+		return in.isOdd();
+	}
+
+	//--------------------------------
+	static boolean isPrime(MyInteger in)
+	{
+		return in.isPrime();
+	}
+	static boolean isEven(MyInteger in)
+	{
+		return in.isEven();
+	}
+	static boolean isOdd(MyInteger in)
+	{
+		return in.isOdd();
+	}
+	
+	//----------------------
+	boolean equals(int num)
+	{
+		return this.value == num;
+	}
+	boolean equals(MyInteger num)
+	{
+		return this.value == num.getValue();
+	}
+
+	//------------------------
+	static int parseInt(char[] chars)
+	{
+		String str = new String(chars);
+		return Integer.valueOf(str);
+	}
+	static int parseInt(String str)
+	{
+		return Integer.valueOf(str);
+	}
+	
+	
+}
+
+
+
+
+public class ex3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	
+		MyInteger inte = new MyInteger(9);
+		
+		System.out.println(inte.equals(9)+" " +inte.equals(new MyInteger(8)));
+		
+		
+		
+		
+	}
+
+}
